@@ -1,0 +1,300 @@
+
+/*------------------------------- BRAND -------------------------------*/
+	.border
+	{
+	border: 1px solid #FA9919;
+	background: #000000;
+	border-radius: 5px;
+	}
+
+	.brand-opacity:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+	}
+
+/*---------------------------- COMMENT BOX ----------------------------*/
+
+    .detailBox 
+    {
+    width:320px;
+    border:1px solid #bbb;
+    margin:50px;
+	}
+
+	.titleBox 
+	{
+	background-color:#F2F2F2;
+	padding:10px;
+	border-radius: 3px;
+	}
+
+	.titleBox label
+	{
+	color:#444;
+	margin:0;
+	display:inline-block;
+	}
+
+	.commentBox 
+	{
+	padding:10px;
+	border-top:1px dotted #bbb;
+	}
+
+	.commentBox .form-group:first-child, .actionBox .form-group:first-child 
+	{
+	width:80%;
+	}
+
+	.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) 
+	{
+	width:18%;
+	}
+
+	.actionBox .form-group * 
+	{
+	width:100%;
+	}
+
+	.taskDescription 
+	{
+	margin-top:10px 0;
+	font-size: 20px;
+	border-bottom: 1px solid;
+	}
+
+	.commentList 
+	{
+	padding:0;
+	list-style:none;
+	max-height:500px;
+	overflow:auto;
+	}
+
+	.commentList li 
+	{
+	margin:0;
+	margin-top:10px;
+	}
+
+	.commentList li > div 
+	{
+	display:table-cell;
+	}
+
+	.commenterImage 
+	{
+	width:30px;
+	margin-right:5px;
+	height:100%;
+	float:left;
+	}
+
+	.commenterImage img 
+	{
+	width:100%;
+	border-radius:50%;
+	}
+
+	.commentText p 
+	{
+	margin:0;
+	}
+
+	.sub-text 
+	{
+	color:#aaa;
+	font-family:verdana;
+	font-size:11px;
+	}
+
+	.actionBo{
+	border-top:1px dotted #bbb;
+	padding:10px;
+	}
+
+	/*---------------------------- REGISTER USER ----------------------------*/
+    /* latin */
+	@font-face {
+  	font-family: 'Montserrat';
+  	font-style: normal;
+  	font-weight: 400;
+  	src: local('Montserrat-Regular'), url(/fonts/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+	}
+	.register-font form ul li fieldset h2 h3 h4 a button input
+	{
+	font-family: 'Montserrat';
+	}
+
+	.montserratstyle ul li
+	{
+	font-family: 'Montserrat';
+	}
+
+	.montserratstyle-side a
+	{
+	font-family: 'Montserrat';
+	}
+
+	.montserratstyle-p
+	{
+	font-family: 'Montserrat';
+	}
+
+	.montserratstyle-button
+	{
+	font-family: 'Montserrat';
+	}
+
+    /*form styles*/
+	#msform {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+	}
+	#msform fieldset {
+	background: #222;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: absolute;
+	}
+	/*Hide all except first fieldset*/
+	#msform fieldset:not(:first-of-type) {
+	display: none;
+	}
+	/*inputs*/
+	#msform input, #msform textarea, #msform select {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+	}
+	/*buttons*/
+	#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	}
+	#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+	}
+	/*headings*/
+	.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #c3c3c3;
+	margin-bottom: 10px;
+	}
+	.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+	}
+	/*progressbar*/
+	#progressbar {
+	margin-bottom: 30px;
+	margin-right: 50px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+		counter-reset: step;
+	}
+	#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+	}
+	#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+	}
+	/*progressbar connectors*/
+	#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+	}
+	#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+	}
+	/*marking active/completed steps green*/
+	/*The number of the step and the connector before it = green*/
+	#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
+	}
+
+	/*---------------------------- USER MASTER PAGE ----------------------------*/
+
+	.sidebar-scroll
+	{
+		overflow: auto;
+	}
+
+	/*---------------------------- ADMIN BUTTONS ----------------------------*/
+
+	.margin-button
+	{
+	margin-right: 3px;
+	margin-left: 3px;
+	}
+
+	/*---------------------------- LIST OF POSTS ----------------------------*/
+
+	.imagesize
+	{
+		height:100%;
+		width:100%;
+	}
+
+	.alert-top
+	{
+		margin-top: 50px;
+	}
+
+	/*---------------------------- CATEGORIES MASTER PAGE ----------------------------*/
+
+	.no-bullet
+	{
+	list-style-type: none;	
+	}
+	

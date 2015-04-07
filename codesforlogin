@@ -1,0 +1,30 @@
+		@if(Auth::guest())
+                    	<li><a href="/auth/login">Login</a></li>
+                 @else
+                         <li><a href="/auth/logout">Logout</a></li>
+                 @endif
+
+
+
+         public function postLogin(Request $request)
+	{
+		$this->validate($request, [
+			'username' => 'required', 'password' => 'required',
+		]);
+
+		$email = Input::get('email');
+		$password = Input::get('password');
+
+		if(Auth::attempt(['email' => $email, 'password' => $password]))		
+		{
+			return redirect('/');
+		}
+
+
+		return redirect($this->loginPath())
+					->withInput($request->only('username', 'remember'))
+					->withErrors([
+						'username' => $this->getFailedLoginMesssage(),
+					]);
+	}
+
